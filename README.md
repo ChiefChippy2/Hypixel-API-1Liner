@@ -1,16 +1,12 @@
-# A wrapper in 1 line
-Yes it works.
-Requires nodejs (v14+), node-fetch ( `npm i node-fetch` )
+# A wrapper in 1 line - For WEB js!
+Yes it works, but read warning.
+Requires browsers that supports ES6 features. (spread operator, `fetch`)
 
 # How to use
 
-```js
-const oneLiner = require('path/to/this/file');
-process.env.KEY = 'api key here';
-oneLiner.getPlayer({uuid:'uuid'}).then(console.log);
-// you can also provide a different key to use
-oneLiner.getPlayer({uuid:'uuid', key:'another api key against tos but shush'}).then(console.log);
-```
+Simply paste this into a file or add it at the 1st line of your js file. 
+You must set your key via `window.key`, or you can specify one in the argument passed to the function.
 
-Alternatively for the API Key, check out `dotenv` (npm package) for loading it from a file. You can also do `KEY=api-key node file.js` if it is more convenient for you.
+# WARNING 
 
+Using this in a browser context is very dangerous! You are exposing your hypixel API Key to the internet, and god knows what people will do with it. There is of course no way to protect this, except from creating a mini reverse proxy. 
