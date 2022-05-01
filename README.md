@@ -1,6 +1,7 @@
 # A wrapper in 1 line
 Yes it works.
 Requires nodejs (v14+), node-fetch ( `npm i node-fetch` )
+To use this in web, switch to the [web](https://github.com/ChiefChippy2/Hypixel-API-1Liner/tree/web) branch.
 
 # How to use
 
